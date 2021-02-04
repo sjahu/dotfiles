@@ -1,0 +1,10 @@
+#!/bin/bash
+
+DIRECTORY="$(cd $(dirname $0); pwd)"
+
+ln -sf "${DIRECTORY}/zshrc" ~/.zshrc
+ln -sf "${DIRECTORY}/tmux.conf" ~/.tmux.conf
+
+# if [ ${SPIN} ]; then
+#
+# fi
