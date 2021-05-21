@@ -45,6 +45,7 @@ alias gcm='git checkout $(git symbolic-ref refs/remotes/origin/HEAD | sed "s@^re
 alias gps="git push"
 alias gpl="git pull && git remote set-head origin --auto"
 alias gbclean="git branch | grep -v \"^*\" | xargs git branch -D"
+alias gr="git rebase"
 
 # tmux
 alias t="tmux"
