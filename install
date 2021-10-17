@@ -6,6 +6,7 @@ ln -sf "${DIRECTORY}/zshrc" ~/.zshrc
 ln -sf "${DIRECTORY}/tmux.conf" ~/.tmux.conf
 ln -sf "${DIRECTORY}/vimrc" ~/.vimrc
 ln -sf "${DIRECTORY}/gitconfig" ~/.gitconfig
+ln -sf "${DIRECTORY}/pryrc" ~/.pryrc
 
 # if [ ${SPIN} ]; then
 #
