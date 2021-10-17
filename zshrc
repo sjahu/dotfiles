@@ -16,10 +16,11 @@ function git_branch_prompt {
   fi
 }
 
-############
-### Path ###
-############
+###################
+### Environment ###
+###################
 PATH="${PATH}:/Users/$(whoami)/bin/"
+EDITOR="vim"
 
 ###############
 ### Aliases ###
