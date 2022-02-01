@@ -20,7 +20,8 @@ function git_branch_prompt {
 ### Environment ###
 ###################
 PATH="${PATH}:/Users/$(whoami)/bin/"
-EDITOR="vim"
+export EDITOR="vim"
+export BUNDLER_EDITOR="code"
 
 ###############
 ### Aliases ###
