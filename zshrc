@@ -3,6 +3,12 @@
 # Stephen Humphries
 # ZSH Config
 
+#############
+### Shell ###
+#############
+bindkey -e # emacs bindings (e.g. Ctrl-a, Ctrl-e)
+bindkey "\e[3~" delete-char
+
 ##############
 ### Prompt ###
 ##############
@@ -19,7 +25,11 @@ function git_branch_prompt {
 ###################
 ### Environment ###
 ###################
-PATH="${PATH}:/Users/$(whoami)/bin/"
+if [ "$(uname)" = "Darwin" ]; then
+  PATH="${PATH}:/Users/$(whoami)/bin"
+else
+  PATH="${PATH}:/home/$(whoami)/bin"
+fi
 export EDITOR="vim"
 export BUNDLER_EDITOR="code"
 
@@ -52,3 +62,12 @@ alias gr="git rebase"
 # tmux
 alias t="tmux"
 alias c="tmux save-buffer - | pbcopy && echo 'Saved tmux buffer to clipboard'"
+
+# sudo
+if [ "$(uname)" = "Linux" ]; then
+  alias pacman="sudo pacman"
+  alias systemctl="sudo systemctl"
+fi
+alias reboot="sudo reboot"
+alias halt="sudo halt"
+
