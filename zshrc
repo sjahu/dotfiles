@@ -42,7 +42,9 @@ alias ..="cd .."
 alias ~="cd ~"
 
 # ls
-alias ls="ls -G" # enable colours
+if [ "$(uname)" = "Darwin" ]; then
+  alias ls="ls -G" # enable colours
+fi
 alias ll="ls -al"
 
 # git
