@@ -44,6 +44,8 @@ alias ~="cd ~"
 # ls
 if [ "$(uname)" = "Darwin" ]; then
   alias ls="ls -G" # enable colours
+else
+  alias ls="ls --color"
 fi
 alias ll="ls -al"
 
