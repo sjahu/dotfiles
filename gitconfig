@@ -1,4 +1,7 @@
 [pull]
 	ff = only
+[push]
+	default = simple
+	autoSetupRemote = true
 [rebase]
 	autostash = true
