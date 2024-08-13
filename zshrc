@@ -62,6 +62,7 @@ alias gps="git push --force-with-lease --force-if-includes"
 alias gpl="git pull && git remote set-head origin --auto"
 alias gbclean="git branch | grep -v \"^*\" | xargs git branch -D"
 alias gr="git rebase"
+alias gplall='for d in ./*/ ; do (cd "$d" && gpl); done'
 
 # tmux
 alias t="tmux"
