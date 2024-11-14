@@ -4,4 +4,4 @@
 	default = simple
 	autoSetupRemote = true
 [rebase]
-	autostash = true
+	autoStash = true
