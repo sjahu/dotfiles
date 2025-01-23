@@ -13,7 +13,7 @@ bindkey "\e[3~" delete-char
 ### Prompt ###
 ##############
 set -o PROMPT_SUBST
-PS1='%F{cyan}%n@%m%f:%F{blue}%2~%f$(git_branch_prompt) %F{white}%#%f '
+PS1='%F{cyan}%n@$(hostname | cut -d. -f1)%f:%F{blue}%2~%f$(git_branch_prompt) %F{white}%#%f '
 
 function git_branch_prompt {
   GIT_BRANCH="$(git symbolic-ref --short HEAD 2>/dev/null)"
